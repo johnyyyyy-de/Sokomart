@@ -37,8 +37,17 @@ fun AppNavHost(
             IntentScreen(navController)
         }
 
+        composable(ROUT_MORE) {
+            MoreScreen(navController)
+        }
+
 
     }
+}
+
+@Composable
+fun MoreScreen(x0: NavHostController) {
+    TODO("Not yet implemented")
 }
 
 @Composable

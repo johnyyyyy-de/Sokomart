@@ -29,6 +29,8 @@ import com.alusa.sokomart.ui.theme.Newwhite
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun IntentScreen(navController: NavController){
+    
+
 
     Column(modifier = Modifier.fillMaxSize()) {
         //TopAppBar
