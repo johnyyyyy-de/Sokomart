@@ -23,6 +23,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.alusa.sokomart.navigation.ROUT_ITEM
+import com.alusa.sokomart.navigation.ROUT_MORE
 import com.alusa.sokomart.ui.theme.Newpink
 import com.alusa.sokomart.ui.theme.Newwhite
 
@@ -102,6 +103,7 @@ fun IntentScreen(navController: NavController){
         )  {
         Text(text = "Get Started")
     }
+    IconButton(onClick ={navController.navigate(ROUT_MORE)} ) { }
 
 
 }

@@ -7,13 +7,22 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.alusa.sokomart.ui.screens.about.AboutScreen
+import com.alusa.sokomart.ui.screens.contact.ContactScreen
+import com.alusa.sokomart.ui.screens.dashboard.DashBoardScreen
 import com.alusa.sokomart.ui.screens.home.HomeScreen
+import com.alusa.sokomart.ui.screens.intent.IntentScreen
+import com.alusa.sokomart.ui.screens.item.ItemScreen
+import com.alusa.sokomart.ui.screens.more.MoreScreen
+import com.alusa.sokomart.ui.screens.raw.AssignmentScreen
+import com.alusa.sokomart.ui.screens.service.ServiceScreen
+import com.alusa.sokomart.ui.screens.splash.SplashScreen
+import com.alusa.sokomart.ui.screens.start.StartScreen
 
 @Composable
 fun AppNavHost(
     modifier: Modifier = Modifier,
     navController: NavHostController = rememberNavController(),
-    startDestination: String = ROUT_START
+    startDestination: String = ROUT_SPLASH
 ) {
 
     NavHost(
@@ -40,27 +49,23 @@ fun AppNavHost(
         composable(ROUT_MORE) {
             MoreScreen(navController)
         }
+        composable(ROUT_DASHBOARD) {
+            DashBoardScreen(navController)
+        }
+        composable(ROUT_CONTACT) {
+            ContactScreen(navController)
+        }
+        composable(ROUT_SERVICE) {
+            ServiceScreen(navController)
+        }
+        composable(ROUT_SPLASH) {
+            SplashScreen(navController)
+        }
+        composable(ROUT_ASSIGNMENT) {
+            AssignmentScreen(navController)
+        }
 
 
     }
 }
 
-@Composable
-fun MoreScreen(x0: NavHostController) {
-    TODO("Not yet implemented")
-}
-
-@Composable
-fun IntentScreen(x0: NavHostController) {
-    TODO("Not yet implemented")
-}
-
-@Composable
-fun StartScreen(x0: NavHostController) {
-    TODO("Not yet implemented")
-}
-
-@Composable
-fun ItemScreen(x0: NavHostController) {
-    TODO("Not yet implemented")
-}
