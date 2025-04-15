@@ -25,6 +25,7 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.alusa.sokomart.R
 import com.alusa.sokomart.navigation.ROUT_DASHBOARD
+import com.alusa.sokomart.navigation.ROUT_LOGIN
 import com.alusa.sokomart.ui.theme.Newpink
 import com.alusa.sokomart.ui.theme.Newwhite
 import com.alusa.sokomart.ui.theme.Newyellow
@@ -38,7 +39,7 @@ fun SplashScreen(navController: NavController){
     val coroutine = rememberCoroutineScope()
      coroutine.launch {
          delay(1000)
-         navController.navigate(ROUT_DASHBOARD)
+         navController.navigate(ROUT_LOGIN)
 
          //end of Navigation
 

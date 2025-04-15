@@ -11,3 +11,7 @@ const val ROUT_CONTACT = "contact"
 const val ROUT_SERVICE = "service"
 const val ROUT_SPLASH = "splash"
 const val ROUT_ASSIGNMENT = "assignment"
+
+//Authentication
+const val ROUT_REGISTER = "Register"
+const val ROUT_LOGIN = "Login"
